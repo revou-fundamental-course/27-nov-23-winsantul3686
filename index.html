@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator segitiga</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+   <hr>
+    <nav>
+        <div class="logo">WsBall20</div>
+        <div>
+            <ul>
+                <li>
+                    <a href="#luas segitiga">Luas Segitiga</a>
+                </li>
+                <li>
+                    <a href="#keliling segitiga">Keliling Segitiga</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+   
+    <hr>
+    <header>
+       <div class="luas segitiga">
+        <div id="luas segitiga">
+        <h1>Luas Segitiga</h1>
+        <img src="https://static.cdntap.com/tap-assets-prod/wp-content/uploads/sites/24/2022/10/5-8.jpg?width=450&quality=90" alt="gambar-luas-segitiga" sizes="20%" srcset="">
+    </header>
+    <div>
+        <h2> Rumus Luas Segitiga yaitu: </h2>
+        <h2>L= 1/2 x a x t</h2>
+    </div>
+    <div>
+        <h2>Dinyatakan:</h2>
+        <h3>L = Luas</h3>
+        <h3>a = Panjang Alas</h3>
+        <h3>t = Tinggi</h3>
+    </div>
+    <!-- label hitung -->
+    <section class="label-hitung">
+        <h2>Hitung Luas Segitiga</h2>
+            <label for="alas">Alas</label>
+            <input type="number" id="alas"
+            placeholder="alas" class="WsBall20-input">
+            <br>
+            <label for="tinggi">Tinggi</label>
+            <input type="number" id="tinggi"
+            placeholder="tinggi" class="WsBall20-input">
+            <br>
+            <button id="hitung">Hitung</button>
+            <button onclick="resetField()">Reset</button>
+                <div id="output1"></div>
+                
+    </section>           
+        <script>
+            const alas = document.getElementById('alas')
+            const tinggi = document.getElementById('tinggi')
+            const hitung = document.getElementById('hitung')
+            const output = document.getElementById('output1')
+            hitung.addEventListener('click', function(){
+            let a = alas.value
+            let t = tinggi.value
+            let l = 0.5*a*t
+            output1.innerHTML = `(L= 1/2 x a x t)
+            (L= 1/2 x ${a} cm x ${t} cm )
+           maka L= ${l} cm2`
+            })
+                     
+        </script>
+    
+
+<hr>
+    <!-- keliling segitiga -->
+  <header>
+    <div> <h1>Keliling Segitiga</h1>
+    </div>
+    <img src="https://www.society.co.id/wp-content/uploads/2022/06/Rumus-keliling-segitiga.jpeg" alt="gambar-luas-segitiga" sizes="10%" srcset="">
+ </header>
+ 
+ <div class="keliling segitiga">
+     <div id="keliling segitiga">
+     <h2> Rumus Keliling Segitiga yaitu: </h2>
+     <h2>K= S1 + S1 + S3</h2>
+ </div>
+
+ <div>
+     <h2>Dinyatakan:</h2>
+     <h3>K= Keliling</h3>
+     <h3>S1 = Sisi 1</h3>
+     <h3>S2 = Sisi 2</h3>
+     <h3>S3 = Sisi 3</h3>
+ </div>
+ <!-- label keliling segitiga -->
+ <section class="label-keliling">
+ <h2>Hitung Keliling Segitiga</h2>
+
+ <label for="sisi1">Sisi 1 </label>
+ <input type="number" id="sisi1" 
+ placeholder='sisi 1' class="WsBall20-input">
+ <br>
+ <label for="sisi2">Sisi 2</label>
+ <input type="number" id="sisi2" 
+ placeholder='sisi 2' class="WsBall20-input">
+ <br>
+ <label for="sisi3">Sisi 3 </label>
+ <input type="number" id="sisi3" 
+ placeholder='sisi 3' class="WsBall20-input">
+ <br>
+ <button id="hitung2">Hitung</button>
+ <button onclick="resetField()">Reset</button>
+ <div id="output2"></div>
+ </section>
+
+ <script>
+    const sisi1 = document.getElementById ('sisi1')
+    const sisi2 = document.getElementById ('sisi2')
+    const sisi3 = document.getElementById ('sisi3')
+    const hitung2 = document.getElementById ('hitung2')
+    const output2 = document.getElementById ('output2')
+    hitung2.addEventListener('click', function(){
+    let d = parseFloat(sisi1.value)
+    let e = parseFloat(sisi2.value)
+    let f = parseFloat(sisi3.value)
+    let g = d+e+f
+    output2.innerHTML = `(k= s1 + s2 + s3)
+    (L= ${d} cm + ${e} cm + ${f} cm)
+   maka L= ${g} cm2`
+    })
+             
+</script>
+ 
+    </header>
+    <hr>
+    <footer>
+        <div class="logo">WsBall20</div>
+        <div>
+            <ul>
+                <li>
+                    <a href="#">Luas Segitiga</a> 
+                </li>
+                <li>
+                    <a href="#">Keliling Segitiga</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <hr>
+    
+</body>
+</html>

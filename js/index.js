@@ -1,22 +1,14 @@
-
-function resetFields() {
-  // Get the input elements by their IDs
+function resetField() {
   var alasInput = document.getElementById('alas');
   var tinggiInput = document.getElementById('tinggi');
 
-  // Reset the input values to an empty string
   alasInput.value = '';
   tinggiInput.value = '';
 
 
   var outputDiv = document.getElementById('output1');
   outputDiv.innerHTML = '';
-}
 
-
-
-
-function resetField() {
   
   var sisi1Input= document.getElementById('sisi1');
   var sisi2Input= document.getElementById('sisi2');
@@ -29,4 +21,5 @@ function resetField() {
   var outputDiv = document.getElementById ('output2');
   outputDiv.innerHTML = '';
 }
- 
+
+
